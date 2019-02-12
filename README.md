@@ -4,7 +4,7 @@ This docker image builds and runs a node app that is compatible with yarn.  I us
 
 ## Run it
 
-1. Place node source code in /sandbox (ex: `$docker-node-sandbox> npx create-react-app sandbox`)
+1. (optional) replace node source code in /sandbox (comes with the create-react-app stock app)
 2. $docker-node-sandbox> cp .env-ui.example .env-ui
 3. docker-compose up
 
