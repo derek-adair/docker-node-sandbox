@@ -30,6 +30,8 @@ Two things need to be edited in order to modify the port:
 ### Using npm instead of yarn
 
 **Spin up node-app container with bash instead of yarn start**
-1. docker-compose run node-app bash -il
+1. `docker-compose run node-app bash -il`
+
 **In the container install and run the app**
-2. npm install && npm start
+
+2. `npm install && npm start`
