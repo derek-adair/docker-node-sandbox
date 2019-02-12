@@ -1,0 +1,18 @@
+version: "3.2"
+services:
+    node-app:
+        build: 
+            context: .
+            dockerfile: Dockerfile
+        env_file: .env-ui
+        volumes:
+            - "./sandbox:/usr/src/app"
+            - "/usr/src/app/node_modules"
+        expose:
+            - 80
+        environment:
+            - NODE_ENV=development
+networks:
+    default:
+        external:
+            name: webproxy
