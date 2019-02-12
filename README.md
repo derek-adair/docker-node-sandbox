@@ -26,3 +26,10 @@ Two things need to be edited in order to modify the port:
 2. docker-compose up --build --force-recreate
 
 *--build and --force-recreate ensure's you get a fresh container and build, I am looking for a better way to handle caching of node_modules, which will make adding/removing/upgrading deps more automatic*
+
+### Using npm instead of yarn
+
+**Spin up node-app container with bash instead of yarn start**
+1. docker-compose run node-app bash -il
+**In the container install and run the app**
+2. npm install && npm start
